@@ -136,7 +136,7 @@ class Endereco(models.Model):
         return self.bairro+" - "+self.endereco
 
 
-class Foto():
+class Foto(models.Model):
     relatorio = models.ForeignKey(Relatorio, on_delete=models.CASCADE)
 
     imagem = models.ImageField(upload_to='images/galeria/% Y/% m/% d')
